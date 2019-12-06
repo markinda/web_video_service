@@ -1,0 +1,222 @@
+<!DOCTYPE>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0">
+    <title>WebVideoService-Онлайн видео сервис</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/javascript.js"></script>
+</head>
+<body>
+
+<!--Header-->
+<header>
+    <div class="logotype"></div>
+    <div id="Clicker1" class="Click" style="background-image: url(assets/images/tru.png)"></div>
+    <div id="Clicker2" class="Click" style="background-image: url(assets/images/tru.png)"></div>
+    <menu id="menu-phone" class="menushka">
+        <a class="a1" href="#">ТОП ЧАСА</a>
+        <a class="a1" href="#">ТОП ДНЯ</a>
+        <a class="a1" href="#">ТОП НЕДЕЛИ</a>
+        <a class="a1" href="#">ТОП МЕСЯЦА</a>
+        <a class="a1" href="#">МАКСИМУМ</a>
+    </menu>
+    <menu id="menu-phone1">
+        <a href="#">ТОП ЧАСА</a>
+        <a href="#">ТОП ДНЯ</a>
+        <a href="#">ТОП НЕДЕЛИ</a>
+        <a href="#">ТОП МЕСЯЦА</a>
+        <a href="#">МАКСИМУМ</a>
+    </menu>
+</header>
+
+<!--Блок модального окна-->
+<div id="ModalWindow">
+    <img id="ModalImage" class="ModalImage">
+    <h1 id="ModalTitle" class="ModalTitle"></h1>
+    <div id="ModalLike" class="ModalLike"></div>
+    <div id="ModalCommit" class="ModalCommit"></div>
+    <div id="ModalComments" class="ModalComments"></div>
+</div>
+
+<!--Блок маленьких видео-->
+<section id="video">
+    <div class="head">
+        <div class="h1">Топ часа</div>
+        <div class="button">Все видео данного раздела</div>
+    </div>
+    <div id="block_video" class="block_video">
+
+
+
+            <a href="#" class="block">
+                <div class="photo" style="background-image: url(assets/images/smallcar.png)">
+                    <div class="time">8:32</div>
+                </div>
+                <div class="statistic">
+                    <div id="Like1" class="like"><span class="like1">453</span> нравится</div>
+                    <div class="subscriber"><span class="subscriber1">901</span> подписчиков</div>
+                </div>
+                <div class="name"
+                     data-image="assets/images/smallcar.png"
+                     data-like="453 понравилось"
+                     data-title="Самая лучшая жига в Челябинске!"
+                     data-commit="Отзывы:"
+                     data-comment='[
+            {"Title":"Саша","Comment":"Очень хорошая жига!"},
+            {"Title":"Данил","Comment":"Огонь Жига!"},
+            {"Title":"Витя","Comment":"Самый лучший аппарат"}
+            ]'>Самая лучшая жига в Челябинске!</div>
+            </a>
+
+
+
+        <a href="#" class="block">
+            <div class="photo" style="background-image: url(assets/images/smallsova.png)">
+                <div class="time">45:22</div>
+            </div>
+            <div class="statistic">
+                <div class="like"><span class="like1">234</span> нравится</div>
+                <div class="subscriber"><span class="subscriber1">120</span> подписчиков</div>
+            </div>
+            <div class="name"
+                 data-image="assets/images/smallsova.png"
+                 data-like="234 понравилось"
+                 data-title="У кого лучше жизнь? Люди или совы?"
+                 data-commit="Отзывы:"
+                 data-comment='[
+            {"Title":"Катерина","Comment":"Это я!"},
+            {"Title":"Данил","Comment":"Странное видео!"},
+            {"Title":"Антон","Comment":"Правда"}
+            ]'>У кого лучше жизнь? Люди или совы?</div>
+        </a>
+
+
+
+        <a href="#" class="block">
+            <div class="photo" style="background-image: url(assets/images/smallsity.png)">
+                <div class="time">5:12</div>
+            </div>
+            <div class="statistic">
+                <div class="like"><span class="like1">232</span> нравится</div>
+                <div class="subscriber"><span class="subscriber1">1232</span> подписчиков</div>
+            </div>
+            <div class="name"
+                 data-image="assets/images/smallsity.png"
+                 data-like="232 понравилось"
+                 data-title="В ночном городе снова серийный убийца?"
+                 data-commit="Отзывы:"
+                 data-comment='[
+            {"Title":"Кирил","Comment":"Очень крутой парень!"},
+            {"Title":"Аня","Comment":"Я боюсь выходить на улицу!"},
+            {"Title":"Витя","Comment":"И что в нем такого?"}
+            ]'>В ночном городе снова серийный убийца?</div>
+        </a>
+
+
+
+        <a href="#" class="block">
+            <div class="photo" style="background-image: url(assets/images/smallvolk.png)">
+                <div class="time">78:00</div>
+            </div>
+            <div class="statistic">
+                <div class="like"><span class="like1">112</span> нравится</div>
+                <div class="subscriber"><span class="subscriber1">321</span> подписчиков</div>
+            </div>
+            <div class="name"
+                 data-image="assets/images/smallvolk.png"
+                 data-like="112 понравилось"
+                 data-title="Правда о современном мире"
+                 data-commit="Отзывы:"
+                 data-comment='[
+            {"Title":"Саша","Comment":"Мое состояние сегодня!"},
+            {"Title":"Данил","Comment":"Мне их очень жалко!"},
+            {"Title":"Витя","Comment":"Смотрите данное видео"}
+            ]'>Правда о современном мире</div>
+        </a>
+
+
+
+        <a href="#" class="block" >
+            <div class="photo" style="background-image: url(assets/images/smallpriroda.png)">
+                <div class="time">15:00</div>
+            </div>
+            <div class="statistic">
+                <div class="like"><span class="like1">212</span> нарвится</div>
+                <div class="subscriber"><span class="subscriber1">143</span> подписчиков</div>
+            </div>
+            <div class="name"
+                 data-image="assets/images/smallpriroda.png"
+                 data-like="212 понравилось"
+                 data-title="Возможно ли спасти природу? Проблема!"
+                 data-commit="Отзывы:"
+                 data-comment='[
+            {"Title":"Саша","Comment":"Все потерянно"},
+            {"Title":"Данил","Comment":"Так обидно за природу!"},
+            {"Title":"Витя","Comment":"Скучаю по 80-ым"}
+            ]'>Возможно ли спасти природу? Проблема!</div>
+        </a>
+    </div>
+</section>
+
+<!--Вывод информации с сервера через JS-->
+
+<!--<section id='video'>
+    <div class="head">
+        <div class="h1">Топ часа</div>
+        <div class="button">Все видео данного раздела</div>
+    </div>
+    <div class="block_video" id="block_video">
+    </div>
+
+</section>-->
+
+
+<!--Блок больших видео-->
+<section id="bigVideo">
+
+    <!--Видео-->
+
+    <a href="#" class="block" style="background-image: url(assets/images/car.png)">
+        <div class="teni" style="background-image: url(assets/images/fon.png)"></div>
+    <div class="recommendations">Рекомендуем</div>
+    <div class="name">Почему лучше брать жигу?</div>
+    <div class="time">22:30</div>
+    </a>
+
+    <!--Видео-->
+
+    <a href="#" class="block" style="background-image: url(assets/images/city.png)">
+        <div class="teni" style="background-image: url(assets/images/fon.png)"></div>
+    <div class="recommendations">Рекомендуем</div>
+    <div class="name">Где можно отдохнуть в этом году?</div>
+    <div class="time">2:30</div>
+    </a>
+
+    <!--Видео-->
+
+    <a href="#" class="block" style="background-image: url(assets/images/lic.png)">
+        <div class="teni" style="background-image: url(assets/images/fon.png)"></div>
+    <div class="recommendations">Рекомендуем</div>
+    <div class="name">Самые хитрые?</div>
+    <div class="time">10:15</div>
+    </a>
+</section>
+
+<!--Footer-->
+<footer id="Footer">
+    <div class="logotype"></div>
+    <menu>
+        <a href="#">Мой аккаунт</a>
+        <a href="#">API</a>
+        <a href="#">Как стать блогером</a>
+        <a href="#">Помочь проекту</a>
+        <a href="#">О проете</a>
+        <a href="#">Контакты</a>
+    </menu>
+</footer>
+
+</body>
+</html>
